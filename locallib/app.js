@@ -10,7 +10,7 @@ const users = require('./routes/users');
 
 const app = express();
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb://<dbuser>:<dbpassword>@ds147304.mlab.com:47304/locallib_mdn';
+const mongoDB = 'mongodb://dhcodes:locallibrary@ds147304.mlab.com:47304/locallib_mdn';
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
