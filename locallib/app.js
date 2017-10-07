@@ -15,7 +15,7 @@ const mongoDB = 'mongodb://dhcodes:locallibrary@ds147304.mlab.com:47304/locallib
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
-let db = mongoose.connection
+let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error!!!:'));
 
 // view engine setup
